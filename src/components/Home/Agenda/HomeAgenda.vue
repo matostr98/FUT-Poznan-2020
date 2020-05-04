@@ -11,10 +11,14 @@
             class="mt-5"
             :dense="$vuetify.breakpoint.smAndDown"
           >
-            <agenda-day title="Czwartek" :day-agenda="thursday" />
-            <agenda-day title="Piątek" :day-agenda="friday" />
-            <agenda-day title="Sobota" :day-agenda="saturday" />
-            <agenda-day title="Niedziela" :day-agenda="sunday" />
+            <v-timeline-item
+              color="primary"
+              fill-dot
+              v-for="(day, index) in days"
+              :key="index"
+            >
+              <agenda-item :title="day.title" :day-agenda="day.dayAgenda" />
+            </v-timeline-item>
           </v-timeline>
         </v-col>
       </v-row>
@@ -23,108 +27,60 @@
 </template>
 
 <script>
-import AgendaDay from "@/components/Home/Agenda/AgendaDay";
+import AgendaItem from "./AgendaItem";
 export default {
   name: "HomeAgenda",
-  components: { AgendaDay },
+  components: { AgendaItem },
   data() {
     return {
-      thursday: [
+      days: [
         {
-          event: "14:00-17:00 - Kwaterowanie",
-          description:
-            "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit."
+          title: "Czwartek",
+          dayAgenda: [
+            {
+              time: "8.00 - 10.00",
+              name: "Śniadanie"
+            },
+            {
+              time: "14.00 - 16.00",
+              name: "Obiad"
+            },
+            {
+              time: "21.00 - 23.00",
+              name: "Kolacja"
+            }
+          ]
         },
         {
-          event: "19:00 - Mistrzostwa FUT w Matrixa",
-          description:
-            "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit."
+          title: "Piątek",
+          dayAgenda: [
+            {
+              time: "8.00 - 10.00",
+              name: "Śniadanie"
+            },
+            {
+              time: "10.00 - 20.00",
+              name: "Lorem ipsum dolor sit amet"
+            }
+          ]
         },
         {
-          event: "21:00 - Integracja uczestników",
-          description:
-            "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit."
-        }
-      ],
-      friday: [
-        {
-          event: "Śniadanie - 06:30-09:30",
-          description:
-            "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit."
+          title: "Sobota",
+          dayAgenda: [
+            {
+              time: "8.00 - 10.00",
+              name: "Śniadanie"
+            }
+          ]
         },
         {
-          event: "Zwiedzanie Fortów Poznańskich - 10:00",
-          description:
-            "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit."
-        },
-        {
-          event: "Kwaterowanie - 12:00-16:00",
-          description:
-            "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit."
-        },
-        {
-          event: "Obiad - 15:00",
-          description:
-            "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit."
-        },
-        {
-          event: "Gala Otwarcia - 17:00",
-          description:
-            "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit."
-        },
-        {
-          event: "Rada Starszych - 18:30",
-          description:
-            "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit."
-        },
-        {
-          event: "Grill z SSPP - 21:00",
-          description:
-            "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit."
-        }
-      ],
-      saturday: [
-        {
-          event: "06:30-09:00 - Śniadanie",
-          description:
-            "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit."
-        },
-        {
-          event: "09:30-15:30 - Panele szkoleniowe",
-          description:
-            "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit."
-        },
-        {
-          event: "16:00 - Obiad",
-          description:
-            "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit."
-        },
-        {
-          event: "17:00 - Sesja Robocza",
-          description:
-            "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit."
-        },
-        {
-          event: "20:00 - Kolacja",
-          description:
-            "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit."
-        },
-        {
-          event: "21:00 - Bal Nadwarciański",
-          description:
-            "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit."
-        }
-      ],
-      sunday: [
-        {
-          event: "Śniadanie - 06:30-10:00",
-          description:
-            "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit."
-        },
-        {
-          event: "Wykwaterowanie - 10:00-12:00",
-          description:
-            "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit."
+          title: "Niedziela",
+          dayAgenda: [
+            {
+              time: "8.00 - 10.00",
+              name: "Śniadanie"
+            }
+          ]
         }
       ]
     };

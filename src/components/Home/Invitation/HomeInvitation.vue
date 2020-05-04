@@ -45,7 +45,6 @@ export default {
       card1: {
         title: "Mertoryczne szkolenia",
         text:
-          "Super szkoleniowcy, zaangażowanie i inne gówno które się tu pisze - " +
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus " +
           "facilisis, ipsum in suscipit ultricies, leo ligula laoreet mi, sit amet " +
           "mollis massa justo eget sapien. Phasellus quis consequat justo. Nulla " +
@@ -55,16 +54,13 @@ export default {
       card2: {
         title: "Pełni pasji ludzie",
         text:
-          "Niezwykła okazja do spędzenia z tego weekendu z ludźmi pełnymi pasji - takimi jak ty." +
-          "Wymień się doświadczeniami, integracja środowiska studenkiego... " +
-          " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus " +
+          "facilisis, ipsum in suscipit ultricies, leo ligula laoreet mi.",
         icon: "icon_people.png"
       },
       card3: {
         title: "Poznań miasto doznań",
         text:
-          "Super miasto, jedna z pierwszych stolic polski, dynamicznie rozwijające się miasto" +
-          ", miasto stojące studentami i nne bzury które się pisze ukrywając fakt że miasta się nie cierpi - " +
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus " +
           "facilisis, ipsum in suscipit ultricies, leo ligula laoreet mi, sit amet " +
           "mollis massa justo eget sapien. Phasellus quis consequat justo. Nulla ",
