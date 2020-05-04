@@ -10,7 +10,7 @@ const vuetify = new Vuetify({
     themes: {
       light: {
         primary: "#830628",
-        secondary: "#821590",
+        secondary: "#B40333",
         anchor: "#000000"
       }
     }
