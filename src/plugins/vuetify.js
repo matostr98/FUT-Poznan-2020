@@ -2,7 +2,6 @@ import Vue from "vue";
 import Vuetify from "vuetify";
 import "vuetify/dist/vuetify.min.css";
 
-
 Vue.use(Vuetify);
 
 const vuetify = new Vuetify({
@@ -10,7 +9,7 @@ const vuetify = new Vuetify({
     themes: {
       light: {
         primary: "#830628",
-        secondary: "#B40333",
+        secondary: "#821590",
         anchor: "#000000"
       }
     }
