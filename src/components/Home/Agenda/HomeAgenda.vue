@@ -1,23 +1,25 @@
 <template>
-  <v-container fluid>
-    <v-row align="center" justify="center">
-      <v-col cols="12" class="display-2 font-weight-bold text-center"
-        >Harmonogram</v-col
-      >
-      <v-col cols="11" md="10" H>
-        <v-timeline
-          align-top
-          class="mt-5"
-          :dense="$vuetify.breakpoint.smAndDown"
+  <div id="agenda">
+    <v-container fluid>
+      <v-row align="center" justify="center">
+        <v-col cols="12" class="display-2 font-weight-bold text-center"
+          >Harmonogram</v-col
         >
-          <agenda-day title="Czwartek" :day-agenda="thursday" />
-          <agenda-day title="Piątek" :day-agenda="friday" />
-          <agenda-day title="Sobota" :day-agenda="saturday" />
-          <agenda-day title="Niedziela" :day-agenda="sunday" />
-        </v-timeline>
-      </v-col>
-    </v-row>
-  </v-container>
+        <v-col cols="11" md="10" H>
+          <v-timeline
+            align-top
+            class="mt-5"
+            :dense="$vuetify.breakpoint.smAndDown"
+          >
+            <agenda-day title="Czwartek" :day-agenda="thursday" />
+            <agenda-day title="Piątek" :day-agenda="friday" />
+            <agenda-day title="Sobota" :day-agenda="saturday" />
+            <agenda-day title="Niedziela" :day-agenda="sunday" />
+          </v-timeline>
+        </v-col>
+      </v-row>
+    </v-container>
+  </div>
 </template>
 
 <script>

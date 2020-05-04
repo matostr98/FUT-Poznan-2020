@@ -1,7 +1,7 @@
 <template>
-  <v-timeline-item color="blue accent-3" fill-dot>
+  <v-timeline-item color="primary" fill-dot>
     <v-card>
-      <v-card-title class="blue accent-3">
+      <v-card-title class="primary">
         <h2 class="display-1 white--text font-weight-light">{{ title }}</h2>
       </v-card-title>
       <v-container>
