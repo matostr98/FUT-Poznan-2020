@@ -82,7 +82,7 @@ export default {
         { title: "O nas", id: "" },
         { title: "Harmonogram", id: "#agenda" },
         { title: "Zakwaterowanie", id: "" },
-        { title: "Kontakt", id: "" },
+        { title: "Kontakt", id: "#contact" },
         { title: "Partnerzy", id: "" }
       ]
     };
