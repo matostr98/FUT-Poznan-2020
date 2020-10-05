@@ -1,9 +1,13 @@
 <template>
   <div id="hero">
-    <v-parallax dark src="@/assets/stary_rynek.jpg" height="700">
+    <v-parallax dark src="@/assets/other/stary_rynek.jpg" height="700">
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12">
-          <v-img src="@/assets/FUT_poznan.png" contain max-height="300"></v-img>
+          <v-img
+            src="@/assets/other/FUT_poznan.png"
+            contain
+            max-height="300"
+          ></v-img>
           <h2 class="display-0 font-weight-thin mb-4">
             Forum Uczelni Technicznych - Poznań 2020
           </h2>

@@ -10,9 +10,9 @@
 <script>
 // @ is an alias to /src
 import HomeHero from "@/components/Home/HomeHero";
-import HomeInvitation from "@/components/Home/invitation/HomeInvitation";
-import HomeRegistration from "@/components/Home/HomeRegistration";
-import HomeAgenda from "@/components/Home/agenda/HomeAgenda";
+import HomeInvitation from "@/components/Home/invitation/Invitation";
+import HomeRegistration from "@/components/Home/invitation/Registration";
+import HomeAgenda from "@/components/Home/agenda/Agenda";
 
 export default {
   name: "Home",
