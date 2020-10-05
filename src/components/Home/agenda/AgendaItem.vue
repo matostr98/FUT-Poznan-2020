@@ -6,8 +6,8 @@
     <v-container class="white text--primary">
       <v-row v-for="(item, index) in dayAgenda" :key="index">
         <v-col cols="12" md="10">
-          <h4>{{ item.time }}</h4>
-          <p>{{ item.name }}</p>
+          <h5 class="font-weight-light">{{ item.time }}</h5>
+          <h4 class="font-weight-bold">{{ item.name }}</h4>
         </v-col>
       </v-row>
     </v-container>
