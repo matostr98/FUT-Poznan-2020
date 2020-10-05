@@ -1,19 +1,8 @@
 <template>
   <div id="invitation">
     <v-container fluid>
-      <v-row align="center" justify="center">
-        <v-col class="text-center" cols="12">
-          <h1 class="display-2 font-weight-bold mt-7">Zapraszamy!</h1>
-        </v-col>
-        <v-col class="text-center" cols="10" lg="5" md="8">
-          <h2 class="headline">
-            Koleżanki i Koledzy! Jest nam niezmiernie miło zaprosić Was do
-            uczestnictwa w zjeździe Forum Uczelni Technicznych, który odbędzie
-            się w Poznaniu gdzieś w październiku 2020.
-          </h2>
-        </v-col>
-      </v-row>
-
+      <component-title :text="invitation_title" />
+      <component-text :text="invitation_text" />
       <v-row class="mt-10" align="start" justify="center">
         <invitation-card
           :title="card1.title"
@@ -36,12 +25,19 @@
 </template>
 
 <script>
-import InvitationCard from "@/components/Home/Invitation/InvitationCard";
+import InvitationCard from "@/components/Home/invitation/InvitationCard";
+import ComponentTitle from "@/components/general/ComponentTitle";
+import ComponentText from "@/components/general/ComponentText";
 export default {
   name: "HomeInvitation",
-  components: { InvitationCard },
+  components: { ComponentText, ComponentTitle, InvitationCard },
   data() {
     return {
+      invitation_title: "Zapraszamy!",
+      invitation_text:
+        "Koleżanki i Koledzy! Jest nam niezmiernie miło zaprosić Was do " +
+        "uczestnictwa w zjeździe Forum Uczelni Technicznych, który odbędzie " +
+        "się w Poznaniu gdzieś w październiku 2020.",
       card1: {
         title: "Mertoryczne szkolenia",
         text:
