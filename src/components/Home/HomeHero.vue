@@ -1,7 +1,7 @@
 <template>
   <div id="hero">
-    <v-parallax dark src="@/assets/other/stary_rynek.jpg" height="700">
-      <v-row align="center" justify="center">
+    <v-parallax dark src="@/assets/other/stary_rynek.jpg" height="750">
+      <v-row align="center" justify="center" class="mt-n12">
         <v-col class="text-center" cols="12">
           <v-img
             src="@/assets/other/FUT_poznan.png"
@@ -24,4 +24,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+#hero {
+  margin-top: -80px;
+}
+</style>
