@@ -4,26 +4,28 @@
     <home-invitation />
     <home-registration />
     <home-agenda />
+    <accommodation />
     <contact />
   </div>
 </template>
 
 <script>
-
 import HomeInvitation from "@/components/Home/invitation/Invitation";
 import HomeRegistration from "@/components/Home/invitation/Registration";
 import HomeAgenda from "@/components/Home/agenda/Agenda";
+import Accommodation from "@/components/Home/accommodation/Accommodation";
+
 import Contact from "@/components/Home/contact/Contact";
 import HomeHero from "@/components/Home/HomeHero";
 export default {
   name: "Home",
   components: {
+    Accommodation,
     HomeHero,
     Contact,
     HomeAgenda,
     HomeRegistration,
     HomeInvitation
-
   }
 };
 </script>

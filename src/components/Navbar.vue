@@ -83,7 +83,7 @@ export default {
         { title: "Rejestracja", id: "#registration" },
         { title: "O nas", id: "" },
         { title: "Harmonogram", id: "#agenda" },
-        { title: "Zakwaterowanie", id: "" },
+        { title: "Zakwaterowanie", id: "#accommodation" },
         { title: "Kontakt", id: "#contact" },
         { title: "Partnerzy", id: "" }
       ]
