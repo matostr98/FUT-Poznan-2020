@@ -4,6 +4,7 @@
     <home-invitation />
     <home-registration />
     <home-agenda />
+    <accommodation />
   </div>
 </template>
 
@@ -13,10 +14,12 @@ import HomeHero from "@/components/Home/HomeHero";
 import HomeInvitation from "@/components/Home/invitation/Invitation";
 import HomeRegistration from "@/components/Home/invitation/Registration";
 import HomeAgenda from "@/components/Home/agenda/Agenda";
+import Accommodation from "@/components/Home/accommodation/Accommodation";
 
 export default {
   name: "Home",
   components: {
+    Accommodation,
     HomeAgenda,
     HomeRegistration,
     HomeInvitation,
