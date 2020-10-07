@@ -27,7 +27,6 @@ export default {
     Registration,
     Invitation,
     HomeHero
-
   }
 };
 </script>
