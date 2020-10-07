@@ -4,6 +4,7 @@
     <home-invitation />
     <home-registration />
     <home-agenda />
+    <accommodation />
     <contact />
   </div>
 </template>
@@ -13,6 +14,7 @@
 import HomeInvitation from "@/components/Home/invitation/Invitation";
 import HomeRegistration from "@/components/Home/invitation/Registration";
 import HomeAgenda from "@/components/Home/agenda/Agenda";
+import Accommodation from "@/components/Home/accommodation/Accommodation";
 import Contact from "@/components/Home/contact/Contact";
 import HomeHero from "@/components/Home/HomeHero";
 export default {
@@ -22,8 +24,8 @@ export default {
     Contact,
     HomeAgenda,
     HomeRegistration,
-    HomeInvitation
-
+    HomeInvitation,
+  Accommodation
   }
 };
 </script>
