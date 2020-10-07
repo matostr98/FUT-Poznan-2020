@@ -81,11 +81,11 @@ export default {
       items: [
         { title: "Zaproszenie", id: "#invitation" },
         { title: "Rejestracja", id: "#registration" },
-        { title: "O nas", id: "" },
+        { title: "O nas", id: "#about" },
         { title: "Harmonogram", id: "#agenda" },
         { title: "Zakwaterowanie", id: "#accommodation" },
         { title: "Kontakt", id: "#contact" },
-        { title: "Partnerzy", id: "" }
+        { title: "Partnerzy", id: "#partners" }
       ]
     };
   },
