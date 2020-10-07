@@ -8,20 +8,11 @@
   </v-app>
 </template>
 
+<style></style>
 <script>
 import Navbar from "@/components/Navbar";
-import FutFooter from "./components/FutFooter";
-
+import FutFooter from "@/components/FutFooter";
 export default {
-  name: "App",
-
-  components: {
-    FutFooter,
-    Navbar
-  },
-
-  data: () => ({
-    //
-  })
+  components: { FutFooter, Navbar }
 };
 </script>

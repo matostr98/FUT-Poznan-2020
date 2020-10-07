@@ -29,7 +29,7 @@ import InvitationCard from "@/components/Home/invitation/InvitationCard";
 import ComponentTitle from "@/components/general/ComponentTitle";
 import ComponentText from "@/components/general/ComponentText";
 export default {
-  name: "HomeInvitation",
+  name: "Invitation",
   components: { ComponentText, ComponentTitle, InvitationCard },
   data() {
     return {
