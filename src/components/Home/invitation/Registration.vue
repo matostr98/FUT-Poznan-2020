@@ -27,7 +27,7 @@
 
 <script>
 export default {
-  name: "HomeRegistration"
+  name: "Registration"
 };
 </script>
 

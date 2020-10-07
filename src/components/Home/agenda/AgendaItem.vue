@@ -19,7 +19,7 @@ export default {
   name: "AgendaItem",
   props: {
     title: String,
-    dayAgenda: []
+    dayAgenda: Array
   }
 };
 </script>

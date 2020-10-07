@@ -29,7 +29,7 @@
 <script>
 import AgendaItem from "./AgendaItem";
 export default {
-  name: "HomeAgenda",
+  name: "Agenda",
   components: { AgendaItem },
   data() {
     return {

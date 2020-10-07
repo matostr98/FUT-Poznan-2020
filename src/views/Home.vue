@@ -1,26 +1,33 @@
 <template>
   <div class="home">
     <home-hero />
-    <home-invitation />
-    <home-registration />
-    <home-agenda />
+    <invitation />
+    <registration />
+    <agenda />
+    <accommodation />
+    <contact />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HomeHero from "@/components/Home/HomeHero";
-import HomeInvitation from "@/components/Home/invitation/Invitation";
-import HomeRegistration from "@/components/Home/invitation/Registration";
-import HomeAgenda from "@/components/Home/agenda/Agenda";
 
+import HomeHero from "@/components/Home/HomeHero";
+import Invitation from "@/components/Home/invitation/Invitation";
+import Registration from "@/components/Home/invitation/Registration";
+import Agenda from "@/components/Home/agenda/Agenda";
+import Accommodation from "@/components/Home/accommodation/Accommodation";
+import Contact from "@/components/Home/contact/Contact";
 export default {
   name: "Home",
   components: {
-    HomeAgenda,
-    HomeRegistration,
-    HomeInvitation,
+    Contact,
+    Accommodation,
+    Agenda,
+    Registration,
+    Invitation,
     HomeHero
+
   }
 };
 </script>
