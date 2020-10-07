@@ -1,6 +1,6 @@
 <template>
   <span>
-    <v-app-bar app color="primary" dark flat>
+    <v-app-bar app :color="navbarColor" dark flat :elevation="navbarElevation">
       <v-app-bar-nav-icon
         class="hidden-lg-and-up"
         @click="drawer = !drawer"
@@ -75,17 +75,38 @@ export default {
     return {
       appTitle: "FUT Poznan",
       drawer: false,
+      navbarColor: "transparent",
+      navbarElevation: 0,
       main: { title: "FUT Poznan", id: "#hero" },
       items: [
         { title: "Zaproszenie", id: "#invitation" },
         { title: "Rejestracja", id: "#registration" },
-        { title: "O nas", id: "" },
+        { title: "O nas", id: "#about" },
         { title: "Harmonogram", id: "#agenda" },
-        { title: "Zakwaterowanie", id: "" },
-        { title: "Kontakt", id: "" },
-        { title: "Partnerzy", id: "" }
+        { title: "Zakwaterowanie", id: "#accommodation" },
+        { title: "Kontakt", id: "#contact" },
+        { title: "Partnerzy", id: "#partners" }
       ]
     };
+  },
+  mounted() {
+    window.onscroll = () => {
+      this.changeColor();
+    };
+  },
+  methods: {
+    changeColor() {
+      if (
+        document.body.scrollTop > 85 ||
+        document.documentElement.scrollTop > 85
+      ) {
+        this.navbarColor = "primary";
+        this.navbarElevation = 10;
+      } else {
+        this.navbarColor = "transparent";
+        this.navbarElevation = 0;
+      }
+    }
   }
 };
 </script>
