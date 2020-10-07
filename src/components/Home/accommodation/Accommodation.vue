@@ -1,10 +1,18 @@
 <template>
-  <div id="about">
+  <div id="accommodation">
     <v-container fluid>
-      <component-title text="O nas" />
+      <component-title text="Zakwaterowanie" />
       <v-row justify="center" align="center">
         <v-col cols="11" lg="7" md="9">
           <v-row justify="center" align="center">
+            <!--            <v-spacer />-->
+            <v-col cols="12" xl="6" lg="6" md="6" sm="7">
+              <v-img
+                src="@/assets/accommodation/mercure.jpg"
+                max-height="500"
+                max-width="500"
+              />
+            </v-col>
             <v-col
               cols="12"
               xl="6"
@@ -24,13 +32,6 @@
                 posuere libero dui id orci.
               </h2>
             </v-col>
-            <v-col cols="12" xl="6" lg="6" md="6" sm="7">
-              <v-img
-                src="@/assets/about/pp.jpg"
-                max-height="500"
-                max-width="500"
-              />
-            </v-col>
           </v-row>
         </v-col>
       </v-row>
@@ -41,7 +42,7 @@
 <script>
 import ComponentTitle from "@/components/general/ComponentTitle";
 export default {
-  name: "About",
+  name: "Accommodation",
   components: { ComponentTitle }
 };
 </script>
