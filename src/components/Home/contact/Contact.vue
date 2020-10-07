@@ -1,12 +1,7 @@
 <template>
   <div id="contact">
     <v-container fluid>
-      <v-row align="center" justify="center">
-        <v-col class="text-center" cols="12">
-          <h1 class="display-2 font-weight-bold mt-7">Koordynatorzy</h1>
-        </v-col>
-      </v-row>
-
+      <component-title text="Koordynatorzy" />
       <v-row class="mt-10" align="start" justify="center">
         <coordinator-card
           :title="bartosz.title"
@@ -25,10 +20,11 @@
 
 <script>
 import CoordinatorCard from "@/components/Home/contact/CoordinatorCard";
+import ComponentTitle from "@/components/general/ComponentTitle";
 
 export default {
   name: "Contact",
-  components: { CoordinatorCard },
+  components: { ComponentTitle, CoordinatorCard },
   data() {
     return {
       bartosz: {
