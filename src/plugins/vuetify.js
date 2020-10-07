@@ -4,7 +4,7 @@ import "vuetify/dist/vuetify.min.css";
 
 Vue.use(Vuetify);
 
-const vuetify = new Vuetify({
+export default new Vuetify({
   theme: {
     themes: {
       light: {
@@ -15,8 +15,6 @@ const vuetify = new Vuetify({
     }
   },
   icons: {
-    iconfont: "md"
+    iconfont: "fa"
   }
 });
-
-export default vuetify;

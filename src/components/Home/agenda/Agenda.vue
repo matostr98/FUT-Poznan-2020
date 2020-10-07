@@ -1,10 +1,8 @@
 <template>
   <div id="agenda">
     <v-container fluid>
+      <component-title text="Harmonogram" />
       <v-row align="center" justify="center">
-        <v-col cols="12" class="display-2 font-weight-bold text-center"
-          >Harmonogram</v-col
-        >
         <v-col cols="11" md="10" H>
           <v-timeline
             align-top
@@ -28,9 +26,10 @@
 
 <script>
 import AgendaItem from "./AgendaItem";
+import ComponentTitle from "@/components/general/ComponentTitle";
 export default {
-  name: "HomeAgenda",
-  components: { AgendaItem },
+  name: "Agenda",
+  components: { ComponentTitle, AgendaItem },
   data() {
     return {
       days: [
