@@ -28,7 +28,7 @@
 import AgendaItem from "./AgendaItem";
 import ComponentTitle from "@/components/general/ComponentTitle";
 export default {
-  name: "HomeAgenda",
+  name: "Agenda",
   components: { ComponentTitle, AgendaItem },
   data() {
     return {
