@@ -14,7 +14,7 @@
               class="align-content-center"
             >
               <h2
-                class="text-sm-h5 text-md-h5 text-lg-h5 text-xl-h5 text-subtitle-1 headline text-center"
+                class="text-sm-h5 text-md-h5 text-lg-h5 text-xl-h5 text-subtitle-1 headline text-justify mr-md-5 mr-lg-5 mr-xl-5"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
                 nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras
@@ -24,11 +24,13 @@
                 posuere libero dui id orci.
               </h2>
             </v-col>
-            <v-col cols="12" xl="6" lg="6" md="6" sm="7">
+            <v-col cols="12" xl="6" lg="6" md="6" sm="7" class="elevation-5">
               <v-img
+                  id="pp-img"
                 src="@/assets/about/pp.jpg"
                 max-height="500"
                 max-width="500"
+
               />
             </v-col>
           </v-row>
@@ -46,4 +48,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+/*#pp-img {*/
+/*  box-shadow: 5px 6px 11px #eeeeee;*/
+/*}*/
+</style>

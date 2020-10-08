@@ -6,7 +6,7 @@
         <v-col cols="11" lg="7" md="9">
           <v-row justify="center" align="center">
             <!--            <v-spacer />-->
-            <v-col cols="12" xl="6" lg="6" md="6" sm="7">
+            <v-col cols="12" xl="6" lg="6" md="6" sm="7" class="elevation-5">
               <v-img
                 src="@/assets/accommodation/mercure.jpg"
                 max-height="500"
@@ -22,7 +22,7 @@
               class="align-content-center"
             >
               <h2
-                class="text-sm-h5 text-md-h5 text-lg-h5 text-xl-h5 text-subtitle-1 headline text-center"
+                class="text-sm-h5 text-md-h5 text-lg-h5 text-xl-h5 text-subtitle-1 headline text-justify ml-md-5 ml-lg-5 ml-xl-5"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
                 nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras

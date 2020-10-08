@@ -18,9 +18,9 @@
           </v-row>
         </v-col>
       </v-row>
-      <v-row class="mt-10" align="start" justify="center" no-gutters>
+      <v-row class="mt-10" align="center" justify="center" no-gutters>
         <v-col cols="12" lg="10" md="10">
-          <v-row class="mt-10" align="start" justify="center" no-gutters>
+          <v-row class="mt-10" align="center" justify="center" no-gutters>
             <v-col
               cols="6"
               lg="2"
